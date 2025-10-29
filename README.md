@@ -100,6 +100,20 @@ JAVA 공부 노트
 	- E next() : 다음 값을 리턴합니다. 어떤 형태인지 모르기 때문에 리턴 유형을 E로 하겠습니다.
 	- void remove() : 삭제 하는 메서드
 
+
+- 정규표현식
+  - 특정한 규칙을 가진 문자열의 집합을 표현하는데 사용되는 언어다.
+  - 텍스트 편집기나 스크립트 언어에서 문자열의 검색과 치환을 위해 지원하고 있다.
+  - java.util.regex.Pattern
+ 	- boolean b = Pattern.matches(String regex , String str) : 특정 문자열(str)이 주어진 정규식(regex)에 매칭되는지를 테스트해볼 수 있다.
+ 	- Pattern.compile(String regex) : 주어진 정규표현식으로부터 패턴 생성
+ 	- Pattern.matcher(CharSequence input) : 대상 문자열이 패턴과 일치할 경우 true 반환
+ 	- Pattern.asPredicate() : 문자열을 일치시키는데 사용할 수 있는 Predicate 작성
+ 	- Pattern.pattern() : 컴파일된 정규표현식을 String 형태로 변환
+ 	- Pattern.split(CharSequence input) : 문자열을 주어진 인자값 CharSequence 패턴에 따라 분리
+ - java.util.regex.Matcher
+
+
 3\. 1.8 version 부터 도입
 --------------
 
